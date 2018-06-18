@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head th:replace="_fragments :: site-head">
+
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/main.css" />
+
+    <title>Index Page</title>
+</head>
+<body>
+
+<nav th:replace="_fragments :: menu(1)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
+    <div class="ui container m-container">
+        <div class="ui inverted stackable menu">
+            <h2 class="ui teal header item">亂彈</h2>
+            <a href="#" class="i-nva item m-mobile-hide"><i class="home icon"></i>Home</a>
+            <a href="#" class="i-nva item m-mobile-hide"><i class="tag icon"></i>Tag</a>
+            <a href="#" class="i-nva item m-mobile-hide"><i class="idea icon"></i>Explore</a>
+            <a href="#" class="i-nva item m-mobile-hide"><i class="archive icon"></i>Archive</a>
+            <a href="#" class="i-nva item m-mobile-hide"><i class="info icon"></i>About</a>
+            <div class="i-nva right item m-mobile-hide" >
+                <div class="ui icon inverted transparent input">
+                    <input type="text" placeholder="Search" >
+                    <i class="search icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--中间内容-->
+<div class="m-padded-tb-extend ">
+    <div class="ui container ">
+        <div class="ui stackable grid">
+
+            <div class="eleven wide column">
+                <!-- Content Header-->
+                <div class="ui top attached teal segment">
+                    <div class="ui middle aligned two column grid">
+                        <div class="column">
+                            <h3 class="ui teal header">Blog</h3>
+                        </div>
+                        <div class="right aligned column"  >
+                            Total <h2 class="ui orange header m-inline-block m-text-thin"> 14 </h2> Pages
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Header end-->
+
+                <!-- Content -->
+                <div class="ui attached  segment">
+
+                    <div class="ui padded vertical segment m-padded-tb-huge">
+
+                        <div class="ui mobile reversed stackable grid">
+                            <div class="eleven wide column">
+                                <h3 class="ui header">My Reading List</h3>
+                                <p class="m-text">And all along I believed, I would find you
+                                    Time has brought your heart to me, I have loved you for a thousand years
+                                    I'll love you for a thousand more
+                                </p>
+
+                                <!-- Content Status-->
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui horizontal link list">
+
+                                            <div class="item">
+                                                <img src="https://picsum.photos/100/100?random" alt="" class="ui avatar image">
+                                                <div class="content">
+                                                    <a href="#" target="_blank"  class="header">Name</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <i class="calendar icon"></i>2018-06-16
+                                            </div>
+
+                                            <div class="item">
+                                                <i class="eye icon"></i>100
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank" class="ui teal basic label m-padded-mini m-text-thin">Random</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/800/570?random" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Content Status End-->
+                    </div>
+
+
+
+                    <div class="ui padded vertical segment m-padded-tb-huge">
+
+                        <div class="ui grid">
+                            <div class="eleven wide column">
+                                <h3 class="ui header">My Reading List</h3>
+                                <p class="m-text">And all along I believed, I would find you
+                                    Time has brought your heart to me, I have loved you for a thousand years
+                                    I'll love you for a thousand more
+                                </p>
+
+                                <!-- Content Status-->
+                                <div class="ui grid">
+                                    <div class="eleven wide column">
+                                        <div class="ui horizontal link list">
+
+                                            <div class="item">
+                                                <img src="https://picsum.photos/100/100?random" alt="" class="ui avatar image">
+                                                <div class="content">
+                                                    <a href="#" class="header">Name</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <i class="calendar icon"></i>2018-06-16
+                                            </div>
+
+                                            <div class="item">
+                                                <i class="eye icon"></i>100
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="right aligned five wide column">
+                                        <a href="#" target="_blank" class="ui teal basic label m-padded-mini m-text-thin">Random</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="five wide column">
+                                <a href="#" target="_blank">
+                                    <img src="https://picsum.photos/800/570?random" class="ui rounded image">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Content Status End-->
+
+                    </div>
+
+
+
+
+                </div>
+
+                <!-- Bottom -->
+                <div class="ui bottom attached segment">
+                    <div class="ui middle aligned two column grid">
+                        <div class="column">
+                            <a href="#" class="mini ui button teal basic">Previous</a>
+                        </div>
+                        <div class="right aligned column"  >
+                            <a href="#" class="mini ui button teal basic">Next</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right bar top-->
+            <div class="five wide column">
+
+                <!--Category-->
+                <div class="ui segments m-margin-top-large">
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="idea icon"></i>Category
+                            </div>
+                            <div class="right aligned column">
+                                <a href="#" target="_blank">more <i class="angle double right icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui teal segment">
+                        <div class=" ui fluid vertical menu">
+                            <a href="#" class="item">
+                                Journal<div class="ui teal basic left pointing label">1</div>
+                            </a>
+                            <a href="#" class="item">
+                                Wish List<div class="ui teal basic left pointing label">1</div>
+                            </a>
+                            <a href="#" class="item">
+                                Chatty<div class="ui teal basic left pointing label">1</div>
+                            </a>
+                            <a href="#" class="item">
+                                Wuha!<div class="ui teal basic left pointing label">1</div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Category-->
+
+                <!--Tag-->
+                <div class="ui segments">
+                    <div class="ui secondary segment">
+                        <div class="ui two column grid">
+                            <div class="column">
+                                <i class="tag icon"></i>Tag
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui teal segment">
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            Adventure <div class="detail">1</div>
+                        </a>
+
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            雜談 <div class="detail">1</div>
+                        </a>
+
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            風月 <div class="detail">1</div>
+                        </a>
+
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            鏡花 <div class="detail">1</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            殘燭 <div class="detail">1</div>
+                        </a>
+                        <a href="#" target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                            大操場 <div class="detail">1</div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!--Recommendation-->
+                <div class="ui segments m-margin-top-large">
+                    <div class=" ui secondary segment">
+                        <i class="bookmark icon"></i>Recommendation
+
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank">User Story</a>
+                    </div>
+                    <div class="ui segment">
+                        <a href="#" target="_blank">Second User Story</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<footer th:replace="_fragments :: site-footer" class="ui  inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <img src="../static/img/favor_HPQ_icon.ico"  class="ui rounded image" alt="" style="width: 110px"
+                     th:src="@{img/favor_HPQ_icon.ico}">
+            </div>
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <h4 class="ui inverted header ">Latest Blog</h4>
+                    <a href="#" class="item">The reading list</a>
+                    <a href="#" class="item">Cracked like bean</a>
+                    <a href="#" class="item">Rolling stone</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <h4 class="ui inverted header ">Contact me</h4>
+                    <a href="#" class="item">Email</a>
+                    <a href="#" class="item">Facebook</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header ">Soufuu</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-min">D'après ses livres j'imaginais Bergotte comme un vieillard
+                    faible et déçu qui avait perdu des enfants et ne s'était
+                    jamais consolé. Aussi je lisais, je chantais intérieurement
+                    sa prose, plus « dolce », plus « lento » peut-être qu'elle
+                    n'était écrite, et la phrase la plus simple s'adressait
+                    à moi avec une intonation attendrie.</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-min">Copyright &copy 2018-2020 Designed by Soufuu</p>
+    </div>
+</footer>
+
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.i-nva').toggleClass('m-mobile-hide');
+    });
+</script>
+
+
+
+</body>
+</html>
